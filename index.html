@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Drink Trailer Roldanillo</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: linear-gradient(135deg, #ffdde1, #ee9ca7);
+      color: #333;
+      text-align: center;
+    }
+    header {
+      background: #ff4d6d;
+      color: white;
+      padding: 20px;
+      font-size: 26px;
+      font-weight: bold;
+    }
+    h2 {
+      margin-top: 20px;
+      color: #222;
+    }
+    .menu-section {
+      padding: 20px;
+    }
+    .table-container {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      flex-wrap: wrap;
+      margin-top: 20px;
+    }
+    table {
+      border-collapse: collapse;
+      background: white;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+      border-radius: 10px;
+      overflow: hidden;
+    }
+    th, td {
+      border: 1px solid #ddd;
+      padding: 12px 18px;
+      text-align: center;
+    }
+    th {
+      background: #ff4d6d;
+      color: white;
+    }
+    tr:nth-child(even) {
+      background: #f9f9f9;
+    }
+    .buttons {
+      margin: 25px;
+    }
+    .btn {
+      display: inline-block;
+      margin: 10px;
+      padding: 12px 20px;
+      background: #ff4d6d;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: 0.3s;
+    }
+    .btn:hover {
+      background: #ff1f4a;
+    }
+    form {
+      background: #fff;
+      margin: 20px;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+      max-width: 400px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    input, select {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    button {
+      background: #ff4d6d;
+      color: white;
+      padding: 12px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      width: 100%;
+    }
+    button:hover {
+      background: #ff1f4a;
+    }
+  </style>
+</head>
+<body>
+  <header>🍹 Drink Trailer Roldanillo 🍹</header>
+
+  <div class="menu-section">
+    <h2>Granizados con licor</h2>
+    <div class="table-container">
+      <table>
+        <tr>
+          <th>Sabor</th>
+          <th>10 oz <br>$7.000</th>
+          <th>12 oz <br>$10.000</th>
+          <th>16 oz <br>$13.000</th>
+        </tr>
+        <tr>
+          <td>Mangoviche</td><td>✔️</td><td>✔️</td><td>✔️</td>
+        </tr>
+        <tr>
+          <td>Martini</td><td>✔️</td><td>✔️</td><td>✔️</td>
+        </tr>
+        <tr>
+          <td>Green Curaçao</td><td>✔️</td><td>✔️</td><td>✔️</td>
+        </tr>
+        <tr>
+          <td>Ojo de Diablo</td><td>✔️</td><td>✔️</td><td>✔️</td>
+        </tr>
+      </table>
+    </div>
+
+    <h2>Granizados sin licor</h2>
+    <div class="table-container">
+      <table>
+        <tr>
+          <th>Sabor</th>
+          <th>10 oz <br>$5.000</th>
+          <th>12 oz <br>$7.000</th>
+          <th>16 oz <br>$9.000</th>
+        </tr>
+        <tr>
+          <td>Fresa</td><td>✔️</td><td>✔️</td><td>✔️</td>
+        </tr>
+        <tr>
+          <td>Mango</td><td>✔️</td><td>✔️</td><td>✔️</td>
+        </tr>
+        <tr>
+          <td>Maracuyá</td><td>✔️</td><td>✔️</td><td>✔️</td>
+        </tr>
+        <tr>
+          <td>Lulo</td><td>✔️</td><td>✔️</td><td>✔️</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+  <div class="buttons">
+    <a href="https://www.instagram.com/drinktrailerroldanillo?igsh=Njh4eDRid3NzcHo0" target="_blank" class="btn">📷 Instagram</a>
+    <a href="https://wa.me/573108441436" target="_blank" class="btn">💬 WhatsApp</a>
+  </div>
+
+  <h2>Haz tu pedido</h2>
+  <form id="pedidoForm">
+    <label>Nombre:</label>
+    <input type="text" id="nombre" required>
+
+    <label>Producto:</label>
+    <select id="producto">
+      <option value="Mangoviche (10oz - $7000)">Mangoviche - 10oz - $7.000</option>
+      <option value="Mangoviche (12oz - $10000)">Mangoviche - 12oz - $10.000</option>
+      <option value="Mangoviche (16oz - $13000)">Mangoviche - 16oz - $13.000</option>
+      <option value="Martini (10oz - $7000)">Martini - 10oz - $7.000</option>
+      <option value="Martini (12oz - $10000)">Martini - 12oz - $10.000</option>
+      <option value="Martini (16oz - $13000)">Martini - 16oz - $13.000</option>
+      <option value="Green Curacao (10oz - $7000)">Green Curaçao - 10oz - $7.000</option>
+      <option value="Ojo de Diablo (10oz - $7000)">Ojo de Diablo - 10oz - $7.000</option>
+      <option value="Granizado Fresa (10oz - $5000)">Fresa - 10oz - $5.000</option>
+      <option value="Granizado Mango (10oz - $5000)">Mango - 10oz - $5.000</option>
+    </select>
+
+    <label>Cantidad:</label>
+    <input type="number" id="cantidad" value="1" min="1" required>
+
+    <label>Dirección:</label>
+    <input type="text" id="direccion" required>
+
+    <button type="submit">📦 Enviar pedido por WhatsApp</button>
+  </form>
+
+  <script>
+    document.getElementById("pedidoForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+      const nombre = document.getElementById("nombre").value;
+      const producto = document.getElementById("producto").value;
+      const cantidad = document.getElementById("cantidad").value;
+      const direccion = document.getElementById("direccion").value;
+
+      const mensaje = `📦 Nuevo pedido Drink Trailer Roldanillo:
+👤 Nombre: ${nombre}
+🥤 Producto: ${producto}
+🔢 Cantidad: ${cantidad}
+📍 Dirección: ${direccion}`;
+
+      window.open(`https://wa.me/573108441436?text=${encodeURIComponent(mensaje)}`, "_blank");
+    });
+  </script>
+</body>
+</html>
